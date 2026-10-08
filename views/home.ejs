@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+    <meta
+      name="description"
+      content="Solliber Micro-Kernel Framework"
+    >
+
+    <title>Micro-Kernel Framework</title>
+
+    <link
+      rel="stylesheet"
+      href="/assets/bootstrap/bootstrap.min.css"
+    >
+  </head>
+
+  <body>
+    <main class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <section
+            class="card shadow-sm"
+            aria-labelledby="framework-title"
+          >
+            <div class="card-body p-4 p-lg-5">
+              <p class="text-body-secondary mb-2">
+                Solliber Framework
+              </p>
+
+              <h1
+                id="framework-title"
+                class="display-5 fw-bold"
+              >
+                Micro-Kernel Framework
+              </h1>
+
+              <p class="lead">
+                The framework foundation is running.
+              </p>
+
+              <hr>
+
+              <dl class="row mb-0">
+                <dt class="col-sm-4">
+                  Environment
+                </dt>
+
+                <dd class="col-sm-8">
+                  <%= application.config.get('environment') %>
+                </dd>
+
+                <dt class="col-sm-4">
+                  Kernel
+                </dt>
+
+                <dd class="col-sm-8">
+                  <%= application.lifecycle.state %>
+                </dd>
+
+                <dt class="col-sm-4">
+                  HTTP
+                </dt>
+
+                <dd class="col-sm-8">
+                  Express
+                </dd>
+              </dl>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="/assets/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
