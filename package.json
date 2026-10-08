@@ -1,0 +1,31 @@
+{
+  "name": "@solliber/micro-kernel-framework",
+  "version": "0.1.0",
+  "description": "A modular Node.js micro-kernel framework.",
+  "type": "module",
+  "engines": {
+    "node": ">=26.10.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "audit": "npm audit --audit-level=high",
+    "build": "node scripts/verify-build.mjs"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.8",
+    "ejs": "7.0.1",
+    "express": "5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "10.10.0",
+    "nodemon": "3.1.14",
+    "prettier": "3.9.9",
+    "vitest": "5.0.3"
+  },
+  "license": "MIT"
+}
